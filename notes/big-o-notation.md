@@ -1,7 +1,7 @@
 Big O Notation
 ====================
 
-O(1)
+O(1) === constant time
 - Doesn't scale with the data size.
 
 O(n)
@@ -32,4 +32,10 @@ O(a) === a = area
 4. DROP all NON-DOMINANT TERMS
   - O(n + n^2) === drop n === O(n2)
 
-  
+
+O(1)
+O(N)
+O(N^2)
+O(N^3)
+O(log N)
+O(n log N)
