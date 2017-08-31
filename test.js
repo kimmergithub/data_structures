@@ -3,7 +3,15 @@
 console.log('Test is working');
 
 
+// good aps from brandon === Algnorythms and algnote
+// hashtables === binary search tree ===
 
+var nameArray = ['kimmer','brandon', 'guy-three'];
+
+Object.prototype.log = function (){
+  console.log(this);
+
+}
 
 
 
@@ -243,6 +251,7 @@ console.log(conga.size());
 
 /* Queues */
 // https://www.youtube.com/watch?v=bK7I79hcm08
+// EASY!
 
 function Queue () {
     collection = [];
@@ -253,6 +262,8 @@ function Queue () {
         collection.push(element);
     };
     this.dequeue = function() {
+        // pulls the front item off the array
+        // opposite of .pop
         return collection.shift();
     };
     this.front = function() {
@@ -275,6 +286,9 @@ q.dequeue();
 console.log(q.front());
 q.print();
 
+// PRIORITY QUEUES ARE MUCH MORE COMPLICATED
+// pushes arrays into an array with a priority assignment.
+// returns the items in their priority order
 
 function PriorityQueue () {
     var collection = [];
@@ -288,6 +302,7 @@ function PriorityQueue () {
             var added = false;
             for (var i=0; i<collection.length; i++){
                  if (element[1] < collection[i][1]){ //checking priorities
+                   // splice 0 is how many items your going to delete at position i === you just want to add the item so your not going to detele anything.
                     collection.splice(i,0,element);
                     added = true;
                     break;
